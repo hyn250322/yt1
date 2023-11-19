@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Video</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu1.png" class="menu-icon">
+            <a href="index2.html"><img src="images/yt.png" class="logo"></a>
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Tìm Kiếm">
+                <img src="images/search.png" >
+            </div>
+            <img src="images/voice-search.png" class="mic-icon">
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/upload.png" >
+            <img src="images/notification.png" >
+            <img src="images/avt/huy.png" class="user-icon">
+        </div>
+    </nav>
+
+<div class="container play-container">
+    <div class="row">
+        <div class="play-video">
+            <video controls autoplay>
+                <source src="images/Bandoi.mp4" type="video/mp4">
+            </video>
+            <br>
+            <h3>KARIK - BẠN ĐỜI (FT. GDUCKY) | OFFICIAL MUSIC VIDEO</h3>
+            <div class="publisher">
+                <img src="images/avt/Karik.png" >
+                <div>
+                    <p>KARIK</p>
+                    <span>1,41 Tr người đăng ký</span>
+                    
+                    <button type="button" onclick="changeToImage()">Đăng Ký</button>
+                    <img src="images/dadangky.png" id="image" alt="Hình ảnh" onclick="changeToButton()"/>
+                </div><div class="play-video-info">
+                        <div class="like-share">
+                            <a href="#" class="like1"><img src="images/like1.png">265 N</a>
+                            <a href="#" class="dislike1"><img src="images/dislike1.png"></a>
+                            <a href="#"><img src="images/share1.png">Chia sẻ</a>
+                            <a href="#"><img src="images/3cham.png"></a>
+                        </div>
+                    </div> 
+            </div>
+            <br>
+            
+              
+            <hr>
+            
+            <div class="vid-description">
+                <div class="video-description"id="videoDescription">
+                <p>27 Tr lượt xem &bull; 1 tháng trước </p>
+                <p>KARIK - BẠN ĐỜI (FT. GDUCKY) | OFFICIAL MUSIC VIDEO</p>
+                <p>Official Audio: <a href="https://wmvn.lnk.to/BanDoi">https://wmvn.lnk.to/BanDoi</a> </p>
+                <br>
+                <p>Lyrics: <br>
+                    Kiếp trước có lẽ 2 ta yêu nhau mà chẳng thể thành vợ chồng <br>
+                    Nghĩ thoáng nên mai ra sao tụi mình cũng đều hài lòng <br>
+                    Có thể hôm nay thương, có thể tương lai buông <br>
+                    Có thể ta không giàu, miễn ở bên nhau vui không buồn <br>
+                    Chớp mắt 20-30 chiều nao rồi tụi mình cũng về già <br>
+                    Ai rồi sẽ phải trước sau theo 1 người cùng về nhà <br>
+                    Bước tiếp hay quên đi, nghĩ lắm chi thêm suy <br>
+                    Ta cứ như bây giờ lo âu xa xôi để làm gì <br>
+                    <br>
+                    Ta yêu là yêu vậy thôi…không có khái niệm đúng và sai <br>
+                    Mấy đứa hay nói lời khó nghe…bên nhau ta bỏ ngoài tai <br>
+                    We rolling overnight…không ai phải nghi ngờ ai <br>
+                    Không quan tâm bao nhiêu lần sai, chỉ cần em còn thương là anh vẫn ở lại. <br>
+                    Đừng nói đến những thứ vốn quá lớn lao <br>
+                    Đâu ai chắc ngày mai 2 ta sẽ chẳng thể bỏ nhau <br>
+                    Giữ tim không hoài nghi bình yên trong ta sẽ đủ lâu <br>
+                    Cứ vô tư biết đâu ngày sau lại vui như tình đầu <br>
+                    <br>
+                    Gặp gỡ trong tâm thế người dưng, chọn ở bên nhau vì bình yên <br>
+                    Quá khứ, hiện tại là tình nguyện…tiếc là trên đời không gì là vĩnh viễn <br>
+                    Vì lời hứa không thắng nổi thời gian, trừ sự cố gắng cả 2 thì có thể <br>
+                    Nhưng nếu phải đặt 2 từ “trách nhiệm” xuống, liệu lòng chung thuỷ có bị làm khó dễ? <br>
+                    Bởi chúng ta cũng chỉ là người thường, may mắn gặp và trở thành người thương <br>
+                    Nên anh chẳng mong gì xa xôi ngoài sự tử tế nếu lỡ 1 người buông <br>
+                    Dù ở lại hay là lỡ thương ai, đừng dành nửa kia lòng thương hại <br>
+                    Cả khi điều vẫn nghĩ là “suốt đời” hồi đáp lại rằng không có tương lai <br>
+                    Khi 1 mai tụi mình nhạt nhoà, ngọt ngào theo sau chẳng được như bấy lâu <br>
+                    Khó đến mấy cứ nói 1 lời thật lòng rồi buông dù chỉ là mấy câu <br>
+                    Đừng lo cho anh sẽ thấy đau <br>
+                    Cười nên dù không thể lấy nhau <br>
+                    Cả 2 có rơi xuống đáy sâu, tương lai chẳng thấy đâu <br>
+                    Vẫn vui như ngày đầu <br>
+                    Hãy thắp sáng hết những ngày còn lại <br>
+                    Nếu như thời gian bên nhau không còn dài <br>
+                    Nếu đến ngày phải buông tay, chỉ xin đừng quên hôm nay <br>
+                    Đã từng biết nhau trên cõi đời này… <br>
+                    <br>
+                    Kiếp trước có lẽ 2 ta yêu nhau mà chẳng thể thành vợ chồng <br>
+                    Nghĩ thoáng nên mai ra sao tụi mình cũng đều hài lòng <br>
+                    Có thể hôm nay thương, có thể tương lai buông <br>
+                    Có thể ta không giàu, miễn ở bên nhau vui không buồn <br>
+                    Chớp mắt 20-30 chiều nao rồi tụi mình cũng về già <br>
+                    Ai rồi sẽ phải trước sau theo 1 người cùng về nhà <br>
+                    Bước tiếp hay quên đi, nghĩ lắm chi thêm suy  <br>
+                    Ta cứ như bây giờ lo âu xa xôi để làm gì <br>
+                    <br>
+                    Mỗi lần anh nghĩ về 2 từ bạn đời lại nở 1 nụ cười bất giác <br>
+                    Bởi vì anh thấy 2 từ này khó hiểu hơn cả mấy chuyện đất cát <br>
+                    Anh đã từng muốn được là rapper và trở thành 1 người rất khác <br>
+                    Nhưng anh chưa từng nghĩ là một ngày anh sẽ sợ phải mất em nhiều hơn mất rap <br>
+                    Bởi vì mẹ nói…yêu có thể dễ, nhưng mà đâu dễ để con kiếm được bạn đời <br>
+                    Chung sống bên nhau, sinh con, đẻ cái, trăm năm thì đâu có thể là chuyện tạm thời <br>
+                    Anh bắt đầu lo, khi em bước tới và làm anh muốn rước về làm dâu cả đời <br>
+                    Nhưng mà anh đúng hay anh sai trong chuyện đó thì chị “Tiên” bảo là thời gian mới biết câu trả lời <br>
+                    Nên em ơi em…em luôn rất yên bình, thật là xinh và thích thêu thùa <br>
+                    Không như tôi…luôn thô ráp bên ngoài và gặp ai cũng muốn trêu đùa <br>
+                    Vậy là sao! 1 người gầy và 1 người cao… <br>
+                    1 người quen buông lời cay đắng lại va vào ngay 1 người ngọt ngào <br>
+                    Thế giới có thể đánh giá 2 đứa rất khác nhau, nhưng như vậy không đúng <br>
+                    Bởi vì tôi chỉ muốn thấy em, sau khi gặp công chúng <br>
+                    Có những lúc tôi như muốn phát điên, em không hề than phiền <br>
+                    Nắm lấy cánh tay tôi đang run lên và trao tôi nụ cười ngoan hiền… <br>
+                    That’s why I love this girl…can you see? <br>
+                    That’s why I love this girl…can you see? <br>
+                    Baby you love your man…I can see! <br>
+                    That we are meant to be…meant to be <br>
+                    <br>
+                    Chớp mắt 20-30 chiều nao rồi tụi mình cũng về già <br>
+                    Ai rồi sẽ phải trước sau theo 1 người cùng về nhà <br>
+                    <br><p>----------------</p>
+                    <p>Fanpage chính thức KARIK:</p>
+                </p><a href="https://www.facebook.com/karik.phk"><img src="images/fb.png" >/karik.phk</a>
+                <p>--- <br> © Bản quyền thuộc về Karik (Vui lòng không reup) <br>
+                    © Copyrighted by Warner Music Vietnam (Do not reup) <br>
+                    ℗ Warner Music Vietnam LLC, ℗ 2023 Warner Music Singapore Pte Ltd.</p>
+                </div>
+                <br>
+                    <button id="toggleButton" onclick="toggleDescription()">Thêm/Ẩn bớt</button>
+                <hr>
+                <h4>10.651 bình luận</h4>
+
+                <div class="add-comment">
+                    <img src="images/avt/huy.png">
+                    <input type="text" placeholder="Viết bình luận...">
+                </div>
+                <div class="old-comments">
+                    <img src="images/avt/hoahongdai.png">
+                    <div>
+                        <h3>HOAHONGDAIMUSIC <span>1 tháng trước</span></h3>
+                        <p>Hay lắm anh RIK, Nhẹ nhàng, ý nghĩa sâu lắng, Người Thường Thành Người Thương hay quá ạ... 
+                            Cho dù A Karik hát chưa tốt nhưng cũng vì lí do nào đó a Karik muốn truyền tải cảm xúc thật sự trong lòng mình ạ, và phải công nhận GDucky nổi bật thật, Rap đến Melody đều good.
+                             Lâu lắm mới thấy xuất hiện.. Chúc 2 Anh Em lên top 1 trending nha ạ <3
+                        </p>
+                        <div class="acomment-action">
+                            <img src="images/like1.png">
+                            <span>688</span>
+                            <img src="images/dislike1.png">
+                            <span></span>
+                            <span>Phản hồi</span>
+                            <a href="">All replies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="old-comments">
+                    <img src="images/avt/emche.png">
+                    <div>
+                        <h3>Em Chè ĐTCL <span>2 ngày trước</span></h3>
+                        <p>Êm dịu mà sâu lắng quá a Rik. Chúc a và GĐK sẽ luôn ra những tác phẩm chất lượng như này đến công chúng 😊
+                        </p>
+                        <div class="acomment-action">
+                            <img src="images/like1.png">
+                            <span>244</span>
+                            <img src="images/dislike1.png">
+                            <span></span>
+                            <span>Phản hồi</span>
+                            <a href="">All replies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="old-comments">
+                    <img src="images/avt/domixi.png">
+                    <div>
+                        <h3>MixiGaming <span>2 ngày trước</span></h3>
+                        <p>Anh thích giai điệu nhẹ nhàng và sâu lắng của bài này, phù hợp với giọng hát của Karik. Phần rap của GDucky cũng rất ấn tượng tạo nên tổng thể tròn trịa cho tác phẩm.
+                        </p>
+                        <div class="acomment-action">
+                            <img src="images/like1.png">
+                            <span>345</span>
+                            <img src="images/dislike1.png">
+                            <span></span>
+                            <span>Phản hồi</span>
+                            <a href="">All replies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="old-comments">
+                    <img src="images/avt/huy.png">
+                    <div>
+                        <h3>@huyhuynh1084 <span>3 ngày trước</span></h3>
+                        <p>''Kiếp trước có lẽ 2 ta yêu nhau mà chẳng thể thành vợ chồng'' ❤
+                        </p>
+                        <div class="acomment-action">
+                            <img src="images/like1.png">
+                            <span>500</span>
+                            <img src="images/dislike1.png">
+                            <span></span>
+                            <span>Phản hồi</span>
+                            <a href="">All replies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="old-comments">
+                    <img src="images/avt/cris.png">
+                    <div>
+                        <h3>Cris Devil Gamer <span>2 ngày trước</span></h3>
+                        <p>Êm dịu mà sâu lắng quá a Rik. Chúc a và GĐK sẽ luôn ra những tác phẩm chất lượng như này đến công chúng 😊
+                        </p>
+                        <div class="acomment-action">
+                            <img src="images/like1.png">
+                            <span>244</span>
+                            <img src="images/dislike1.png">
+                            <span></span>
+                            <span>Phản hồi</span>
+                            <a href="">All replies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="old-comments">
+                    <img src="images/avt/justatee.png">
+                    <div>
+                        <h3>JustaTeeMusic <span>2 tuần trước</span></h3>
+                        <p>Chớp mắt 20-30 chiều nao rồi tụi mình cũng về giàaaaaaa ❤
+                        </p>
+                        <div class="acomment-action">
+                            <img src="images/like1.png">
+                            <span>4 N</span>
+                            <img src="images/dislike1.png">
+                            <span></span>
+                            <span>Phản hồi</span>
+                            <a href="">All replies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="old-comments">
+                    <img src="images/avt/vtvshows.png">
+                    <div>
+                        <h3>@VTVSHOWS <span>2 tuần trước</span></h3>
+                        <p>Cứ bồi hồi, buộc người ta phải nghe đi nghe lại nhiều lần...
+                            Cảm ơn Karik và GDucky cùng ekip đã mang đến một sản phẩm trọn vẹn cảm xúc ❤
+                        </p>
+                        <div class="acomment-action">
+                            <img src="images/like1.png">
+                            <span>4 N</span>
+                            <img src="images/dislike1.png">
+                            <span></span>
+                            <span>Phản hồi</span>
+                            <a href="">All replies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="old-comments">
+                    <img src="images/avt/phml2.png">
+                    <div>
+                        <h3>@phml12 <span>1 tháng trước</span></h3>
+                        <p>MV quá hay luon ạ, sự kết hợp Karik và Gducky thật sự rất tuyệt.
+                             Thấm từng câu từng chữ. Chúc Mv của anh sẽ đạt Top 1 trending ạaaaa. Mãi mãi ủng hộ anhhhhhhh
+                        </p>
+                        <div class="acomment-action">
+                            <img src="images/like1.png">
+                            <span>326</span>
+                            <img src="images/dislike1.png">
+                            <span></span>
+                            <span>Phản hồi</span>
+                            <a href="">All replies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="old-comments">
+                    <img src="images/avt/mck.png">
+                    <div>
+                        <h3>MCK // Nger <span>2 tuần trước</span></h3>
+                        <p>1 bài hát mang lại sự bình yên thật sự, cảm ơn a Rik, Gducky & cả ekip đã cho ra 1 mv ngay đúng lúc này.
+                        </p>
+                        <div class="acomment-action">
+                            <img src="images/like1.png">
+                            <span>4 N</span>
+                            <img src="images/dislike1.png">
+                            <span></span>
+                            <span>Phản hồi</span>
+                            <a href="">All replies</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="right-sidebar">
+
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=3gNuUcPg1fk" class="small-thumbnail"><img src="images/hitmeup.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=3gNuUcPg1fk">BINZ - HIT ME UP (ft. NOMOVODKA) | OFFICIAL MV</a>
+                    <p>Binz Da Poet</p>
+                    <p>20 Tr lượt xem &bull; 4 tuần trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=-fOpQGLxCTE" class="small-thumbnail"><img src="images/anhvanluonnhuvay.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=-fOpQGLxCTE">B RAY - ANH LUÔN NHƯ VẬY (feat. cậu bảo) | OFFICIAL MV</a>
+                    <p>EvB Records</p>
+                    <p>7,4 Tr lượt xem &bull; 1 tháng trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=QYG3Bd5rqJ4" class="small-thumbnail"><img src="images/emche1.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=QYG3Bd5rqJ4">SỨC MẠNH CỦA RIVEN 3 SAO VÀ VIEGO 7 THÁNH RA DẺ ...</a>
+                    <p>Em Chè ĐTCL</p>
+                    <p>35 N lượt xem &bull; 4 ngày trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=1OJQdxT6WHE" class="small-thumbnail"><img src="images/ngumotminh.png" ></a>
+                <div class="vid-info">
+                    <a href="">hieuthuhai - ngủ một mình (tình rất tình) ft. negav (prod...</a>
+                    <p>HIEUTHUHAI</p>
+                    <p>53 Tr lượt xem &bull; 11 tháng trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=ev9LsEW53Uw" class="small-thumbnail"><img src="images/cktg.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=ev9LsEW53Uw">Top 5 Highlights | CKTG 2023 - BÁN KẾT</a>
+                    <p>Vietnam Championship Series - LMHT</p>
+                    <p>24 N lượt xem &bull; 1 ngày trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=Yw9Ra2UiVLw" class="small-thumbnail"><img src="images/chimsau.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=Yw9Ra2UiVLw">Chìm Sâu - RPT MCK (feat. Trung Trần) | Official Lyr...</a>
+                    <p>MCK // Nger</p>
+                    <p>68 Tr lượt xem &bull; 1 năm trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=fyMgBQioTLo" class="small-thumbnail"><img src="images/neulucdo.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=fyMgBQioTLo">tlinh - nếu lúc đó (ft. 2pillz) | OFFICIAL MUSIC VIDEO</a>
+                    <p>tlinh</p>
+                    <p>51 Tr lượt xem &bull; 8 tháng trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=ZL2I9l5jcMI" class="small-thumbnail"><img src="images/dasaitulucdau.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=ZL2I9l5jcMI">ĐÃ SAI TỪ LÚC ĐẦU | Trung Quân - @buianhtuan | Live...</a>
+                    <p>TRUNG QUÂN</p>
+                    <p>7,1 Tr lượt xem &bull; 1 năm trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=wnSdr8efg-I&t=14sI" class="small-thumbnail"><img src="images/cris1.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=wnSdr8efg-I&t=14sI">Cris Phan reaction cùng người yêu HIEUTHUHAI trong 2...</a>
+                    <p>Cris Devil Gamer</p>
+                    <p>690 N lượt xem &bull; 2 tuần trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=HXkh7EOqcQ4" class="small-thumbnail"><img src="images/thangdien.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=HXkh7EOqcQ4">THẰNG ĐIÊN | JUSTATEE x PHƯƠNG LY | OFFICIAL MV</a>
+                    <p>JustaTeeMusic</p>
+                    <p>236 Tr lượt xem &bull; 5 năm trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=dz6xe0xXqYE" class="small-thumbnail"><img src="images/anhdaonhon.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=dz6xe0xXqYE">14. Anh Đã Ổn Hơn - RPT MCK | "99%" the album</a>
+                    <p>MCK // Nger</p>
+                    <p>19 Tr lượt xem &bull; 8 tháng trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=F5tS5m86bOI" class="small-thumbnail"><img src="images/lalung.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=F5tS5m86bOI">LẠ LÙNG / Vũ. (Original)</a>
+                    <p>Vũ Official</p>
+                    <p>122 Tr lượt xem &bull; 6 năm trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=Zzn9-ATB9aU" class="small-thumbnail"><img src="images/nangtho.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=Zzn9-ATB9aU">Nàng Thơ | Hoàng Dũng | Official MV</a>
+                    <p>Hoàng Dũng</p>
+                    <p>122 Tr lượt xem &bull; 3 năm trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=0VC6euBtKkk" class="small-thumbnail"><img src="images/cochangtraivietlencay.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=0VC6euBtKkk">Có Chàng Trai Viết Lên Cây - Phan Mạnh Quỳnh | MẮT ...</a>
+                    <p>YEAH 1 MUSIC</p>
+                    <p>88 Tr lượt xem &bull; 3năm trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=vPz8ftK_4bk" class="small-thumbnail"><img src="images/danhdoi.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=vPz8ftK_4bk">Obito - Đánh Đổi ft. MCK</a>
+                    <p>Obito Official</p>
+                    <p>8,2 Tr lượt xem &bull; 1 tháng trước</p>
+                </div>
+            </div>
+            <div class="side-video-list">
+                <a href="https://www.youtube.com/watch?v=U0Vr1zotKIo" class="small-thumbnail"><img src="images/taivisao.png" ></a>
+                <div class="vid-info">
+                    <a href="https://www.youtube.com/watch?v=U0Vr1zotKIo">RPT MCK - TẠI VÌ SAO | Official Music Video</a>
+                    <p>MCK // Nger</p>
+                    <p>33 Tr lượt xem &bull; 1 năm trước</p>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
